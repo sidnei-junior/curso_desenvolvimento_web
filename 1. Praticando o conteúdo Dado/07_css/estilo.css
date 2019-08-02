@@ -1,0 +1,14 @@
+body{
+	background: #000;
+}
+
+h1{
+	color: orange;
+	background: #C00000;
+	padding: 3px;
+	width: 200px;
+}
+
+p{
+	color: gray;
+}
