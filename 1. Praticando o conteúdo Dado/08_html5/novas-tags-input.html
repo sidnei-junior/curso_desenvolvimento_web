@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Introdução HTML 5</title>
+		<meta charset="utf-8" />
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+		
+		<form>
+
+			<label for="nome">Nome</label>
+			<input type="text" id="nome" autofocus="">
+			<br><br>
+
+			<label for="email">E-mail</label>
+			<input type="email" id="email" placeholder="teste@teste.com.br" required>
+			<br><br>
+			
+			<label for="numero">Número</label>
+			<input type="number" id="numero" min="5" max="11" step="2">
+			<br><br>
+
+			<label for="url">Url</label>
+			<input type="url" id="url" placeholder="http://www.exemplo.com">
+			<br><br>
+
+			<label for="pesquisa">Pesquisar</label>
+			<input type="search" id="pesquisa" placeholder="Digite algo">
+			<br><br>
+
+			<label for="range">Range</label>
+			<input type="range" id="range" min="3" max="21" step="3" value="12">
+			<br><br>
+			
+			<label for="data">Data</label>
+			<input type="date" id="data">
+			<br><br>
+
+			<label for="cor">Cor</label>
+			<input type="color" id="cor">
+			<br><br>
+			
+			<input type="submit" name="btn-submit" value="Enviar">
+		</form>
+	</body>
+</html>
