@@ -1,0 +1,19 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "Projeto do curso da Cod3r",
+  "main": "outro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oi",
+    "oi",
+    "oi"
+  ],
+  "author": "\"Sidnei\"",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
