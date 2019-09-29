@@ -1,0 +1,8 @@
+{%extends "itens/base.html"%}
+{% block content %}
+<form method="POST"> {% csrf_token %}
+    {{form.as_p}} <!-- as_p renderiza o form como um parágrafo-->
+    <input type="submit" value="Enviar">
+    <a href="{% url 'home'%}" class="link_botton">Voltar</a>
+</form>
+{% endblock content %}

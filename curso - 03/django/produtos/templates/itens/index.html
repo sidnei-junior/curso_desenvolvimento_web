@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="{%static 'css/style.css'%}">
-</head>
-<body>
-    <h1> {{mensagem}} </h1>
-</body>
-</html>
+{% extends "itens/base.html" %}
+
+{% block content %}
+    <h1>{{mensagem}}</h1> 
+    {{produtos}}
+    <ul>
+        {% for produto in produtos %}
+        <li>Nome: {{produto.nome}}</li>
+        <li>Preço: {{produto.preco}}</li>
+        <li>Descrição: {{produto.descricao}}</li>
+        <hr>
+        {% endfor %}
+        <a href="{% url 'create_produto'%}" class="link_botton">Adicionar produto</a>
+    </ul>
+{% endblock content %}
