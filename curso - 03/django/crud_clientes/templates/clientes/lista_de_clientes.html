@@ -1,7 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1 class="text-success">Lista de Clientes</h1>
-{{ clientes }}
+<div class="container">
+    <div class="text-center">
+            <h1 class="text-info">Lista de Clientes</h1>
+    </div>
+    <table class="table table-head">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>CPF</th>
+                <th>Data de Criação</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+            <tr>
+                <td>{{ cliente.nome }}</td>
+                <td>{{ cliente.email }}</td>
+                <td>{{ cliente.cpf }}</td>
+                <td>{{ cliente.data_criacao }}</td>
+                <td><a href="#" class="btn btn-warning">Editar</a></td>
+                <td><a href="#" class="btn btn-danger">Excluir</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    {{ clientes }}
+</div>
+
 
 {% endblock content %}
