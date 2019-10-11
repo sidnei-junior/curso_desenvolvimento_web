@@ -10,9 +10,9 @@ def lista_de_clientes(request):
 def adicionar_cliente(request):
    form = ClienteForm(request.POST)
    if form.is_valid():
-      obj = form.save
+      obj = form.save()
       obj.save()
-   else:
-      form = ClienteForm()
+   
+   form = ClienteForm()
 
    return render(request, "clientes/adicionar_clientes.html", {'form':form})
