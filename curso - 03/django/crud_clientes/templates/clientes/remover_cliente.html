@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content%}
+<div class="container">
+    <h1>Tem certeza que deseja excluir o cliente {{ cliente.nome }}?</h1>
+    <form action="" method="post"> {% csrf_token %}
+        <div class="text-center">
+            <input type="submit" class="btn  btn-danger" value="Excluir">
+            <a href="{% url 'lista_de_clientes' %}" class="btn btn-warning">Voltar</a>
+        </div>
+    </form>
+</div>
+{% endblock content%}
