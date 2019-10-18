@@ -1,0 +1,49 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+        <a href="#" onclick="show(backend)">backend</a>        
+        <ul style="display: none" id="backend">
+            <li>
+                <a href="#" onclick="show(app)">app</a>
+                <ul style="display: none" id="app"> 
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="show(config)">config</a>
+                <ul style="display: none" id="config">
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" onclick="show(frontend)">frontend</a>
+        <ul style="display: none" id="frontend">
+            <li>
+                <a href="#" onclick="show(public)">public</a>
+                <ul style="display: none" id="public">
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    function show(id) {
+        let v = id.style.display;
+        if(v == "none") {
+            id.style.display = "inline";
+        } else {
+            id.style.display = "none";
+        }
+    }
+</script>
